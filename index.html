@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suitzako futbol taldeak</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>Estadioaren edukiera 10.000 baino handiagoa duten taldeak</h1>
+    <div id="teams-container"></div>
+
+    <h2>Taldeen Datuak Taulan</h2>
+    <table id="teams-table" border="1" cellspacing="0" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Taldea</th>
+                <th>Estadioa</th>
+                <th>Edukiera</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Grafikoak</h2>
+    <canvas id="barChart" width="600" height="300"></canvas>
+    <canvas id="lineChart" width="600" height="300"></canvas>
+    <canvas id="doughnutChart" width="300" height="300"></canvas>
+
+    <button onclick="sortuPDF()">Sortu PDF</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
